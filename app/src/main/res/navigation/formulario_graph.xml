@@ -13,7 +13,7 @@
 
         <action
             android:id="@+id/actionFromPersonalDataToAddress"
-            app:destination="@id/address"/>
+            app:destination="@+id/address" />
     </fragment>
 
     <fragment

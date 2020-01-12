@@ -40,7 +40,9 @@ class PersonalDataFragment : Fragment() {
         setListener()
         viewModel.run {
             openAddress.observe(this@PersonalDataFragment, Observer {
-                navController.navigate(R.id.actionFromPersonalDataToAddress)
+                val direction =
+                    PersonalDataFragmentDirections.actionFromPersonalDataToAddress()
+                navController.navigate(direction)
             })
         }
     }
