@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Navigation Teste</string>
+
+    <string name="signup">Cadastro</string>
+    <string name="home">Home</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Nome</string>
+    <string name="last_name">Sobrenome</string>
+    <string name="age">Idade</string>
+    <string name="address">Endereço</string>
+    <string name="next">Continuar</string>
+</resources>

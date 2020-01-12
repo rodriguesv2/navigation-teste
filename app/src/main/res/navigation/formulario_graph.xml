@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/formulario_graph"
+    app:startDestination="@id/personalData">
+
+    <fragment
+        android:id="@+id/personalData"
+        android:name="br.com.rubensrodrigues.navigationteste.ui.signup.fragments.personaldata.PersonalDataFragment"
+        android:label="fragmentPersonalData"
+        tools:layout="@layout/fragment_personal_data">
+
+        <action
+            android:id="@+id/actionFromPersonalDataToAddress"
+            app:destination="@id/address"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/address"
+        android:name="br.com.rubensrodrigues.navigationteste.ui.signup.fragments.AddressFragment"
+        android:label="fragmentAddressData"
+        tools:layout="@layout/fragment_address"/>
+
+</navigation>
