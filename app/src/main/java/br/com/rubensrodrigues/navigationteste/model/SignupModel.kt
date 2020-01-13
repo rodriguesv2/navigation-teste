@@ -1,20 +1,18 @@
 package br.com.rubensrodrigues.navigationteste.model
 
-data class Signup(
-    var personalData: PersonalData? = null,
-    var address: Address? = null
-)
+import java.io.Serializable
 
-data class PersonalData(
-    val name: String,
-    val lastName: String,
-    val age: Int
-)
 
-data class Address(
-    val address: String,
-    val neighborhood: String,
-    val city: String,
-    val uf: String
-)
+class PersonalData(
+    var name: String,
+    var lastName: String,
+    var age: Int
+) : Serializable
+
+class Address(
+    var address: String,
+    var neighborhood: String,
+    var city: String,
+    var uf: String
+) : Serializable
 

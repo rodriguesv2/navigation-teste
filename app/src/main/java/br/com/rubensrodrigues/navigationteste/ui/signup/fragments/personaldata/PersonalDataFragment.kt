@@ -12,6 +12,8 @@ import androidx.navigation.fragment.findNavController
 import br.com.rubensrodrigues.navigationteste.AppInjector
 
 import br.com.rubensrodrigues.navigationteste.R
+import br.com.rubensrodrigues.navigationteste.model.PersonalData
+import br.com.rubensrodrigues.navigationteste.ui.signup.SignupActivity
 import kotlinx.android.synthetic.main.fragment_personal_data.*
 
 /**
@@ -40,11 +42,22 @@ class PersonalDataFragment : Fragment() {
         setListener()
         viewModel.run {
             openAddress.observe(this@PersonalDataFragment, Observer {
-                val direction =
-                    PersonalDataFragmentDirections.actionFromPersonalDataToAddress()
-                navController.navigate(direction)
+                val personalData = PersonalData(
+                    personalDataNameTextView.text.toString(),
+                    personalDataLastNameTextView.text.toString(),
+                    personalDataAgeTextView.text.toString().toIntOrNull() ?: 0
+                )
+
+                (activity as SignupActivity).personalData = personalData
+                goToAddress()
             })
         }
+    }
+
+    private fun goToAddress() {
+        val direction =
+            PersonalDataFragmentDirections.actionFromPersonalDataToAddress()
+        navController.navigate(direction)
     }
 
     private fun setListener() {

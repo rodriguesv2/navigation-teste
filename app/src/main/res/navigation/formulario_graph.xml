@@ -18,8 +18,19 @@
 
     <fragment
         android:id="@+id/address"
-        android:name="br.com.rubensrodrigues.navigationteste.ui.signup.fragments.AddressFragment"
+        android:name="br.com.rubensrodrigues.navigationteste.ui.signup.fragments.address.AddressFragment"
         android:label="fragmentAddressData"
-        tools:layout="@layout/fragment_address"/>
+        tools:layout="@layout/fragment_address">
+
+        <action
+            android:id="@+id/actionFromAddressToResume"
+            app:destination="@id/resume"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/resume"
+        android:name="br.com.rubensrodrigues.navigationteste.ui.signup.fragments.resume.ResumeFragment"
+        android:label="fragmentResume"
+        tools:layout="@layout/fragment_resume"/>
 
 </navigation>

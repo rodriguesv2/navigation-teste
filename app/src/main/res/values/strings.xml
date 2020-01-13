@@ -3,12 +3,12 @@
 
     <string name="signup">Cadastro</string>
     <string name="home">Home</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="name">Nome</string>
     <string name="last_name">Sobrenome</string>
     <string name="age">Idade</string>
     <string name="address">Endereço</string>
     <string name="next">Continuar</string>
+    <string name="neighborhood">Bairro</string>
+    <string name="city">Cidade</string>
+    <string name="state">UF</string>
 </resources>

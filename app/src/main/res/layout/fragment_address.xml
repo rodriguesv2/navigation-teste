@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.signup.fragments.AddressFragment">
+    tools:context=".ui.signup.fragments.address.AddressFragment">
 
     <EditText
         android:id="@+id/addressTextView"
@@ -12,4 +14,43 @@
         android:hint="@string/address"
         android:layout_margin="12dp"/>
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/addressNeighborhoodTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/neighborhood"
+        android:layout_margin="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="12dp">
+
+        <EditText
+            android:id="@+id/addressCityTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/city"/>
+
+        <EditText
+            android:id="@+id/addressUfTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:maxLength="2"
+            android:hint="@string/state"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addressButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="@string/next"
+        android:layout_margin="12dp"
+        android:background="@drawable/radius_btn"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>
