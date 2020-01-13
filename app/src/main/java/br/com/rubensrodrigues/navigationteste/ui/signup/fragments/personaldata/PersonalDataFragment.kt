@@ -40,6 +40,10 @@ class PersonalDataFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         setListener()
+        setObservers()
+    }
+
+    private fun setObservers() {
         viewModel.run {
             openAddress.observe(this@PersonalDataFragment, Observer {
                 val personalData = PersonalData(

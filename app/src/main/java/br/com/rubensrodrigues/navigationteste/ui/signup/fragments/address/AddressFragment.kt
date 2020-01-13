@@ -40,6 +40,10 @@ class AddressFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         setListener()
+        setObservers()
+    }
+
+    private fun setObservers() {
         viewModel.run {
             openResume.observe(this@AddressFragment, Observer {
                 val address = Address(

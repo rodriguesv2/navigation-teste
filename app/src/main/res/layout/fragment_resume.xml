@@ -3,11 +3,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.signup.fragments.resume.ResumeFragment">
 
     <TextView
+        android:id="@+id/resumeName"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_margin="12dp"
+        tools:text="Nome: Rubens Rodrigues" />
+
+    <TextView
+        android:id="@+id/resumeAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_margin="12dp"
+        tools:text="Nome: Rubens Rodrigues" />
+
+    <TextView
+        android:id="@+id/resumeAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_margin="12dp"
+        tools:text="Nome: Rubens Rodrigues" />
+
+    <TextView
+        android:id="@+id/resumeNeighborhood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_margin="12dp"
+        tools:text="Nome: Rubens Rodrigues" />
+
+    <TextView
+        android:id="@+id/resumeCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_margin="12dp"
+        tools:text="Nome: Rubens Rodrigues" />
+
+    <Button
+        android:id="@+id/resumeButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="@string/finish"
+        android:layout_margin="12dp"
+        android:background="@drawable/radius_btn"
+        android:textColor="@android:color/white"/>
 
 </LinearLayout>

@@ -11,4 +11,11 @@
     <string name="neighborhood">Bairro</string>
     <string name="city">Cidade</string>
     <string name="state">UF</string>
+    <string name="resumeName"><![CDATA[<b>Nome: </b>%s]]></string>
+    <string name="resumeAge"><![CDATA[<b>Idade: </b>%s]]></string>
+    <string name="resumeAddress"><![CDATA[<b>Endereço: </b>%s]]></string>
+    <string name="resumeNeighborhood"><![CDATA[<b>Bairro: </b>%s]]></string>
+    <string name="resumeCity"><![CDATA[<b>Cidade: </b>%s]]></string>
+    <string name="resumeUf"><![CDATA[<b>Estado: </b>%s]]></string>
+    <string name="finish">Finalizar</string>
 </resources>
