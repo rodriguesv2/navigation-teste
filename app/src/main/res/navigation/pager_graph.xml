@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pager_graph"
+    app:startDestination="@id/firstScreen">
+
+    <fragment
+        android:id="@+id/firstScreen"
+        android:name="br.com.rubensrodrigues.navigationteste.ui.pager.fragments.JustTheFirstScreenFragment"
+        tools:layout="@layout/fragment_just_the_first_screen">
+
+        <action
+            android:id="@+id/actionFromFirstToSecond"
+            app:destination="@id/secondScreen"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/secondScreen"
+        android:name="br.com.rubensrodrigues.navigationteste.ui.pager.fragments.ThePagerScreenFragment"
+        tools:layout="@layout/fragment_the_pager_screen">
+
+    </fragment>
+
+</navigation>

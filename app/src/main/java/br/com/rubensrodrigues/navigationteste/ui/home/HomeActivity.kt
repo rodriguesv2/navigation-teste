@@ -6,6 +6,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import br.com.rubensrodrigues.navigationteste.AppInjector
 import br.com.rubensrodrigues.navigationteste.R
+import br.com.rubensrodrigues.navigationteste.ui.pager.PagerActivity
 import br.com.rubensrodrigues.navigationteste.ui.signup.SignupActivity
 import kotlinx.android.synthetic.main.activity_home.*
 import org.jetbrains.anko.intentFor
@@ -37,5 +38,9 @@ class HomeActivity : AppCompatActivity() {
 
     private fun setListeners() {
         buttonSignup.setOnClickListener { viewModel.onSigninClicked() }
+
+        buttonViewPager.setOnClickListener {
+            startActivity(intentFor<PagerActivity>())
+        }
     }
 }

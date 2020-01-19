@@ -8,6 +8,18 @@
     tools:context=".ui.home.HomeActivity">
 
     <Button
+        android:id="@+id/buttonViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="@string/viewpager_teste"
+        android:layout_margin="12dp"
+        android:background="@drawable/radius_btn"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@id/buttonSignup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
         android:id="@+id/buttonSignup"
         android:layout_width="match_parent"
         android:layout_height="55dp"
